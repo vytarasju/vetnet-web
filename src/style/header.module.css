@@ -1,0 +1,53 @@
+.container {
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+}
+
+.container > .rightContainer > button {
+  background-color: #0B0C0C;
+  color: #FFFCFC;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: .1rem .2rem .2rem #1B9AAA;
+  padding: .25rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  transition: opacity .1s;
+}
+
+.container > .rightContainer > button:hover {
+  opacity: 80%;
+}
+
+.container > .rightContainer > button:active {
+  opacity: 70%;
+}
+
+
+.container > .rightContainer  {
+  justify-content:space-between;
+  gap: 1rem;
+}
+
+.container > .leftContainer > img {
+  height: 2.5rem;
+}
+
+@media screen {
+  
+}

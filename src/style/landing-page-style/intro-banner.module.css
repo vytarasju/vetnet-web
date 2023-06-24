@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.container > .gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #135C61 20%, rgba(255, 255, 255, 0));
+  z-index: 1;
+  position: absolute;
+}
+
+.container > img {
+  max-height: 80%;
+  position: relative;
+}
+
+.container > .text * {
+  margin: 0;
+  margin-bottom: .2rem;
+}
+
+.container > .text {
+  position: absolute;
+  left: 2rem;
+  top: 5rem;
+  z-index: 2;
+  text-align: left;
+  color: white;
+}
+
+.container > .text > .title {
+  margin-bottom: 1.2rem;
+  font-weight:900;
+  font-size:1.5rem;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+} 
+
+.optionsmenu {
+  position: relative;
+  margin-right: -1rem;
+  margin-left: 1rem;
+  margin-top: -4rem;
+  z-index: 9;
+}
+
+/* Styles for phones */
+@media (max-width: 900px) {
+  .optionsmenu {
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+  .container > .text {
+    word-wrap: break-word;
+  }
+  .container > .text * {
+    text-align: center;
+  }
+
+  .container > .text > .subtitle {
+    margin-bottom: .5rem;
+  }
+
+  .container > .gradient {
+    background: linear-gradient(to right, #135C61 20%,  rgba(19,92,97, .3));
+  }
+}
+
+/* Styles for tablets */
+@media (min-width: 900px) and (max-width: 1023px) {
+
+}
+
+/* Styles for PCs */
+@media (max-width: 1024px) {
+
+}

@@ -1,0 +1,202 @@
+.container  {
+  border-radius: .7rem;
+  width: 95%;
+  height: 7.5rem;
+  background-color: #F2FFFA;
+  box-shadow: .4rem .5rem .15rem rgba(19, 92, 97, 0.37);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* centering main elements */
+.container > * {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.container > .chat {position: relative;}
+
+.container > .chat > .profiles {
+  position: absolute;
+  top: 38%;
+}
+
+
+.container > * > h3, .chat > .title > h3 {
+  margin: 0;
+  text-align:center;
+} 
+
+.container  > .features > .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: .3rem;
+  margin-bottom: .45rem;
+}
+/* end centering elements */
+
+.buttons button {
+  padding: .68rem;
+  background: none;
+  border-radius: .2rem;
+  width: fit-content;
+  margin-bottom: .3rem;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+
+.buttons button:hover {
+  opacity: .7;
+}
+
+.buttons button:active {
+  opacity: .5;
+}
+
+.buttons img {transform: scale(2.3);}
+
+.buttons p {
+  line-height: .7rem;
+  font-size: .7rem;
+  text-align: center;
+  margin: 0;
+  width: 4.5rem;
+}
+
+.maps > .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #FFFCFC;
+  border: 2px solid #198E8E;
+  box-shadow: 0rem .3rem .4rem rgba(27, 154, 170, 25%);
+  border-radius: .8rem;
+  cursor: pointer;
+  transition: box-shadow .15s;
+}
+
+.maps > .location:hover {
+  box-shadow: 0rem .3rem .4rem rgba(27, 154, 170, 80%);
+}
+
+.maps > .location:active {
+  box-shadow: 0rem .3rem .4rem rgba(214, 60, 29, 0.8);
+}
+
+.maps > .location img {
+  height: 1.4rem;
+  margin-right: .3rem;
+}
+
+.maps > .location p {
+  font-weight: bolder;
+}
+.maps > .worldmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+}
+
+.maps > .worldmap * {
+  cursor: pointer;
+}
+
+.maps > .worldmap h4 {
+  margin: 0;
+  font-size: small;
+  color: #6C6464;
+}
+
+.maps > .worldmap img {
+  margin-top: -.05rem;
+}
+
+.chat > .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  font-weight: bold;
+}
+
+.chat > .title button {
+  background: none;
+  border: none;
+  margin-bottom: .4rem;
+  cursor: pointer;
+  transition: opacity .15s;
+}
+
+.chat > .title button:hover {opacity: .7;}
+.chat > .title button:active {opacity: .5;}
+
+.chat > .title > h3 {color: #6C6464;}
+
+.chat > .profiles {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat > .profiles button {
+  background: none;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  border: 3px solid #1B9AAA;
+  padding: .55rem .55rem .4rem .55rem;
+  border-radius: 100%;
+}
+
+.chat > .profiles > button img {
+  transform: scale(2);
+}
+
+
+/* Styles for phones */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22rem;
+    gap: 1.5rem;
+    width: 90%;
+  }
+
+  .container > * > h3, .chat > .title > h3 {
+    margin-bottom: .8rem;
+  }
+
+  .maps > .location {
+    margin-bottom: .5rem;
+  }
+
+  .chat {
+    gap: 1rem;
+  }
+}
+
+/* Styles for tablets */
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container {
+    justify-content: space-between;
+    flex-direction: row;
+    height: 7.5rem;
+    width: 95%;
+  }
+}
+
+/* Styles for PCs
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    height: 7.5rem;
+  }
+} */

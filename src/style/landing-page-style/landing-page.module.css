@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 3.5rem;
+}
+
+
+/* .container > IntroBanner {
+  margin-top: 10rem;
+} */
+
